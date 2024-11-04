@@ -720,7 +720,7 @@ Kuriimuをデフォルトの.msbt編集プログラムに設定することを�
 
 Toolboxでは.msbtファイルを直接編集できないため、編集するにはエクスポートする必要があります。
 
-3. 編集したい`.msbt`ファイルを見つけたら、それを右クリックして「Export Raw Data（生データをエクスポート）」をクリックします
+3. 編集したい`.msbt`ファイルを見つけたら、それを右クリックして「Export Raw Data」をクリックします
 
 <img width="305" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/abb00fc6-c6d7-4173-8fc5-d071411ac62a">
 
@@ -901,9 +901,10 @@ Toolboxでは.msbtファイルを直接編集できないため、編集する�
 <img width="494" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e9e302e7-83bb-4650-9501-d1d57da15a3b">
 
 12. 今度はサブウェポンも同じようにする。ここでも、交換すべきパーツはこれだけです。
+
 <img width="437" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c8ec91e7-a01a-433f-9461-73ec9a66bcc6">
 
-13. その気になったら、武器のスペシャルポイントの必要量を編集します。0に設定すると、使用後に自動的にスペシャルメーターが再び満タンになります。
+14. その気になったら、武器のスペシャルポイントの必要量を編集します。0に設定すると、使用後に自動的にスペシャルメーターが再び満タンになります。
 
 <img width="143" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/09f8ba82-3738-48f9-aac7-37de715b1366">
 
@@ -929,53 +930,52 @@ Toolboxでは.msbtファイルを直接編集できないため、編集する�
 
 20. ゲームを起動します
 
-Have fun with your new kit but be sure to take a little break if all that code overwhelmed you because the next tutorial will involve a lot of code as well.
+新しいキットを楽しんでください。ただし、すべてのコードに圧倒された場合は、少し休憩を取ることをお勧めします。次のチュートリアルでもたくさんのコードが必要になりますので。
 
-# Changing Weapon Functionality / Parameters
+# ウェポンの機能/パラメータの変更
 
-This might be the most anticipated part for you. At the end of this walkthough you will be able to change almost anything about any main, sub, and special weapon.
+これはあなたにとって最も期待されている部分かもしれません。この手順の最後には、ほとんどすべてのメイン、サブ、およびスペシャルウェポンに関する変更ができるようになります。
 
-Right now i will just show you how to modify some very basic parameters. After this tutorial though is where everything gets more specific and i show you literally everything i know
+今は、ごく基本的なパラメーターの変更方法を紹介します。このチュートリアルの後は、より具体的に、私が知っていることをすべてお見せします。
 
-Lets change the range, damage, RNG, and fire rate of the Splattershot Nova
+Splattershot Novaの射程、ダメージ、RNG、発射速度を変更してみよう
 
-This tutorial will have less pictures and less descriptive text for things we've already done multiple times in previous tutotials.
+このチュートリアルでは、これまでのチュートリアルですでに何度もやっていることについては、写真や説明文を少なくします。
 
-1. Inside toolbox, lets decompress another file with ZSTD compression. You should know how to decompress and compress with ZSTD by now
+1. Toolboxの中で、ZSTD圧縮を使って別のファイルを解凍してみましょう。ZSTDを使った解凍と圧縮の方法は、もうお分かりでしょう。
+2. romfsダンプに移動し、Packフォルダーを開きます。次に、`Params.pack.zs`を選択します
 
-2. go to your romfs dump and open the Pack folder. Then select `Params.pack.zs`
+このファイルには、メイン、サブ、スペシャルウェポンのパラメータとステージパラメータがすべて含まれています
 
-This file contains all main, sub, special weapon parameters as well as stage parameters
+3.  Params.pack`として、簡単に見つけられる場所に保存します
 
-3.  save it as `Params.pack` to a location you can find easily
+4.  新しく保存した `Params.pack` をToolboxで開きます
 
-4.  open the newly saved `Params.pack` in toolbox
+変更したいウェポンのコードネームを検索する。サーモンランやヒーローモードに特化して機能を変更したい場合は、ヒーローモードの場合は`_Msn`、サーモンランの場合は`_Coop`を検索の最後に追加します。
 
-We are going to search for the code name of a weapon we want to modify. If you want to modify its functionality specifically for salmon run or hero mode, add `_Msn` for hero mode or `_Coop` for salmon run to the end of the search.
-
-5.  Hit the search button and search for ShooterQuickLong. To find splattershot nova. however this brings up 2 files
+5.  検索ボタンをクリックして「ShooterQuickLong」と検索します。これでSplattershot Novaを見つけることができます。ただし、2つのファイルが表示されます
 
 <img width="107" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/6b72cce2-f1b0-4ee2-bf7b-95f0b0ef3a21">
 
 <img width="304" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e33eb047-ff30-4360-8afc-baad4aae8a06">
 
-We always want the one that dosent have "Coop" in the name. Coop means Co-op which means salmon run. any file in Params.pack with Coop in the name only changes specific parts of the weapon in salmon run so we dont care about it.
+Params.packにある Coop という名前のファイルは、サーモンランの特定の武器を変更するだけなので、気にする必要はありません。Params.packにある Coop という名前のファイルは、サーモンランの武器の特定の部分を変更するだけなので、気にする必要はありません。
 
-6. Click the file without Coop in the name to locate it in the file view. Close the search window now
+6. 名前に Coop が含まれていないファイルをクリックし、ファイルビューで探します。検索ウィンドウを閉じます。
 
-7. double click the highlighted file.
+7. ハイライトされたファイルをダブルクリックします
 
-8. switch to text editor and hit "Decompile"
+8. テキストエディターに切り替え、「デコンパイル 」を押します
 
-Lets start by giving it 100 damage just for the hell of it.
+まずは100ダメージを与えることから始めてみましょう。
 
-9. Locate the line that says DamageParam. Should be at line 15
+9. 「DamageParam」と書かれた行を見つけてください。15行目にあるはずです
 
-10. ValueMax and ValueMin are the only values we care about 
+10. 「ValueMax」と「ValueMin」が私たちが気にする唯一の値です
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3f69a8f3-b325-4806-b846-fc88b141207f)
 
-11. 240 and 120 are the damage numbers multiplied by 10. the extra zero is in case a decimal value is needed. so lets set the Max and Min damage to 1000 to make it do 100 damage no matter what.
+11. 「240」と「120」は、10倍されたダメージの数値です。小数点以下の値が必要な場合のために、余分なゼロがあります。ですので、最大ダメージと最小ダメージを1000に設定して、常に100のダメージを与えるようにしましょう。
 
 12. Lets also give nova perfect RNG. To do this, scroll down to the bottom section `WeaponParam`
 
