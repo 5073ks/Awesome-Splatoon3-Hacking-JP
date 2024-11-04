@@ -272,7 +272,7 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b580dc9e-9320-4048-bdab-3469931ad9f8)
 
-8. エディタのエッジを好みに合わせて調整します。その後、アウトライナーエディタをシェーダーエディタに変更します
+8. エディタのエッジを好みに合わせて調整します。その後、Outliner EditorをShader Editorに変更します
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/0f00fe25-9aa0-4d0d-a331-c2d539c90690)
 
@@ -280,7 +280,7 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/19224fec-741a-462c-b4c7-4b49e42b4e2d)
 
-10. モデルに付属している各画像テクスチャ（`Alb`、`Mtl`、`Nrm`、`Rgh`）を、シェーダーエディターに1つずつドラッグ＆ドロップします。これらはプレビューを表示するための基本的なテクスチャです
+10. モデルに付属している各画像テクスチャ（`Alb`、`Mtl`、`Nrm`、`Rgh`）を、Shader Editorに1つずつドラッグ＆ドロップします。これらはプレビューを表示するための基本的なテクスチャです
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/7b6c3125-4b80-4cf7-a7ec-fd95d168ce8d)
 
@@ -302,87 +302,87 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
   
   <img width="839" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1cbe5a0e-4bc6-498e-837c-91d94427e2b9">
   
-  - For each prefix you have, there should also be a material. The material for each prefix should be on its respective object. To view all the objects, pull up the timeline window hiding at the bottom of the screen and change the clock icon to be the one labaled outliner.
+  - 各プレフィックスごとに、それぞれのマテリアルが必要です。各プレフィックスのマテリアルは、それぞれのオブジェクトに配置されているべきです。すべてのオブジェクトを表示するには、画面の下に隠れているタイムラインウィンドウを表示し、時計のアイコンを「アウトライナー」と表示されているものに変更します。
   
   <img width="589" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c1c225e1-2f70-44bd-9304-be9c3fce29ee">
   
-  - Press `Shift` + `A` to expand everything and locate everything reperesented by a triangle icon. those are your objects. Click on an object and go to the material properties
+  - `Shift` + `A`を押してすべてを展開し、三角形のアイコンで表されているすべてのものを見つけます。それらがあなたのオブジェクトです。オブジェクトをクリックし、マテリアルプロパティに移動します
   
   <img width="950" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/2d8532dd-0bcd-434d-86ac-7c501f78e84b">
   
-- Select the material and drag in the image textures which prefixes match the material name. Then repeat above process for each
+- マテリアルを選択し、対応するプレフィックスを持つイメージテクスチャをドラッグします。次に、上記のプロセスを各マテリアルについて繰り返します
 
 <img width="482" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fcf60101-03e0-40da-af58-6ac55123bc35">
 
-- Your model could also have multiple models that actually use the same texture but it has a different material. If your image textures only have 1 prefix but some part of your model is still white, then assign the white model(s) the same material as the other model
+- あなたのモデルには、実際に同じテクスチャを使用する複数のモデルがある場合もありますが、それぞれ異なるマテリアルを持っています。イメージテクスチャにプレフィックスが1つしかない場合でも、モデルの一部がまだ白いままであるなら、その白いモデルに他のモデルと同じマテリアルを割り当ててください
  
-15. Change the properties editor to a UV Editor
+15. プロパティエディターをUVエディターに変更します
  
  <img width="616" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/2ff66f6b-992e-4608-9bda-75b2f4340201">
 
-16. Open the image you want to edit. In this case, we are only editing the Alb image
+16. 編集したい画像を開きます。この場合、私たちはAlb画像のみを編集しています
 
  <img width="400" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/9b8d0372-5747-47cc-8caf-0badc5a61f48">
 
-17. Back in the viewport, select the model, press `Tab` to switch to edit mode, and press `A` to select all vertecies. Your UV editor should be filled with orange dots and lines
+17. ビューポートに戻り、モデルを選択して`Tab`を押して編集モードに切り替え、`A`を押してすべての頂点を選択します。あなたのUVエディターにはオレンジの点と線が満たされているはずです
 
  <img width="860" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b504c7bc-eaee-4cf5-a28a-a565cd0a1fce">
 
-18. In the UV editor, click the UV pannel and select Export UV Layout. You may need to scroll down the menu to see it.
+18. UVエディターで、UVパネルをクリックし、「UVレイアウトをエクスポート」を選択します。メニューをスクロールしないと見えないかもしれません。
 
  <img width="395" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/81a2f384-a201-4e3d-8fe2-8ca3d87b298d">
 
-19. For organizational purposes, export the png file to the same place as all your image textures. Make sure to name it something that stands out
+19. 整理のため、pngファイルをすべての画像テクスチャと同じ場所にエクスポートします。必ず目立つ名前をつけてください。
 
-20. Open your photo editing program. Import the Alb texture and place the exported UV layout image on top of it. Now we can see how the model displays the texture.
+20. 写真編集ソフトを開きます。Albテクスチャをインポートし、エクスポートしたUVレイアウト画像をその上に配置します。これで、モデルがテクスチャをどのように表示するかを見ることができます。
 
-21. Now go crazy. put anything you want on it. Remember not to change the size of the image though.
+21. 好きなものを好きなように貼ってください。ただし、画像のサイズは変えないように。
 
-TIP: Remember to repeat the above process to get the UV layout for **ALL** of the objects that use the same material and put that UV map over the first one. You'll know if multiple objects are using the same material if there is some detail that looks like it should be covered by a UV layout.
+ヒント: 他のオブジェクトが同じマテリアルを使用している場合、UVレイアウトを取得するために上記のプロセスを繰り返すことを忘れないでください。すべてのUVマップを最初のものの上に配置します。同じマテリアルを使用しているかどうかは、UVレイアウトでカバーされるべき詳細があるかどうかを確認することでわかります。
 
-22. Once done, hide the UV layout images so they dont appear in the final product. Export it in the same place as the original Alb image to replace it. we wont need it anymore
+22. 完成したら、UVレイアウト画像を非表示にして、最終製品に表示されないようにします。元のAlb画像と同じ場所にエクスポートして置き換えます
 
-23. Back in the shader editor, click on the Alb node. then hit `N` to bring up a panel. Go to the `Node` section on that panel. Click the refresh button to refresh the image texture and make sure its to your liking
+23. Shader Editorに戻り、Albノードをクリックします。その後、`N`を押してパネルを表示させます。パネルの`Node`セクションに移動し、Refreshボタンをクリックして画像テクスチャを更新し、満足のいく状態になっていることを確認します
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/ca50a936-8e3d-460b-b504-b8a09a30255a)
 
-25. Once ready, go back to toolbox and replace the Alb image on the model. The default settings in the window that pops up should be fine
+25. 準備ができたら、ツールボックスに戻り、モデル上のAlb画像を置き換えます。ポップアップするウィンドウのデフォルト設定でOK
 
 <img width="229" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/dae238af-b5d9-4d09-b7dd-45052ed0588e">
 
-**If you're following along with the new tutorial, return back to that section using [this link](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#9-save-the-bfres-file-using-the-save-icon-in-the-top-left-corner). if you're using this tutoairl because that method diddnt work, ignore this message.
+**新しいチュートリアルに沿っている場合は、[このリンク](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#9-save-the-bfres-file-using-the-save-icon-in-the-top-left-corner)を使用してそのセクションに戻ってください。この方法が上手くいかなかった為にこのチュートリアルを使用している場合は、このメッセージを無視してください。**
 
-26. Right click the `Textures` folder and click export
+26. `Textures`フォルダを右クリックし、エクスポートをクリックします
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e86377bc-3ea5-4f78-bb49-c98a1943e947)
 
-27. Save it as `textures.bntx` to where your model and textures are
+27. モデルとテクスチャがある場所に`textures.bntx`として保存します
 
-28. In toolbox, go to Tools > Compression > ZSTD > Decompress
+29. Toolboxで、Tools > Compression > ZSTD > Decompressを選択します
 
-29. Find your model in the models forlder and open it
+30. モデルフォルダーでモデルを見つけ、それを開きます
 
-30. Remove the `.zs.dec` in the name so the file extension becomes `.bfres`
+31. ファイル名の`.zs.dec`を削除し、拡張子が`.bfres`になるようにします
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/79dd3b59-aeee-49c5-86a2-efd633ee198d)
 
-31. Save it to where you originally exported the model
+31. モデルを最初にエクスポートした場所に保存します
 
-32. Open your hex editor. I'm using HxD
+32. Hex Editorを開きます。私はHxDを使用しています
 
-33. Drag the `.bfres` file into the hex editor to open it. You should now see a bunch of random characters
+33. `.bfres`ファイルをHex Editorにドラッグして開きます。これでランダムな文字がたくさん表示されるはずです
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/86474eaf-3767-4eb4-8435-107afaa873be)
 
-34. Do the same for `textures.bntx` it should open in a new tab
+34. 同じように`textures.bntx`を新しいタブで開きます
 
-35. Go to the `textures.bntx` tab and copy all of it (`Ctrl` + `A` then `Ctrl` + `C`)
+35. `textures.bntx`タブに移動し、すべてをコピーします（`Ctrl` + `A` 次に `Ctrl` + `C`）
 
-36. Go back to the Wmn_Weapon_Name`.bfres` and hit `Ctrl` + `F`
+36. Wmn_Weapon_Name`.bfres` に戻り、`Ctrl` + `F` キーを押します
 
-37. Type in "bntx"
+37. 「bntx」と入力します
 
-38. Click "Search All"
+38. 「Search All」をクリックします
 
 39. We want the line that has "BNTX" in all caps. That should always be the second line
 
