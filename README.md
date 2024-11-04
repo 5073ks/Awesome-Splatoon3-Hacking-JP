@@ -194,7 +194,45 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
 
 <img width="662" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/6d590fdd-1d92-4c75-a38b-7d6c1d81c2ba">
 
-17. ヘリアキーの画像を右クリックし、`Replace`を選択します
+17. ヒエラルキーの画像を右クリックし、`Replace`を選択します
 
 <img width="218" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b7772570-915d-49dd-bdc1-2a7582df1883">
+
+18. カスタムバッジを保存した場所に移動し、選択します
+19. 新しいオプションウィンドウで、フォーマットを `B8_G8_R8_A8_UNORM` に変更します。どのフォーマットが最も適しているかを見るために、すべてのフォーマットを交互に試すことをお勧めします。私の場合、このフォーマットはより柔らかいエッジとアルファチャンネル、そして良い色合いを提供します。フォーマットボックスを選択し、矢印キーを使って迅速に切り替えます。
+20. OKをクリック
+21. 右側の`Use SRGB`にカーソルを合わせ、ドロップダウンをクリックしてfalseからtrueに変更します
+
+<img width="266" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/8340761b-601c-4b33-a6a6-ed687008599a">
+
+22. 左上の保存アイコンをクリックします
+
+<img width="215" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/74b2edd6-4fdd-4433-899b-0b4396c30e06">
+
+23. 「ZSTDでファイルを圧縮しますか？」というウィンドウに 「はい 」をクリックします
+
+これで、ツールボックスで開いたファイルが置き換えられました。romfsダンプのbadgeフォルダに戻り、先ほど置き換えたファイルを見つけてください
+
+<img width="200" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/84ccb7e9-afe1-4290-be90-4874dcee39b1">
+
+ヒント: ファイルの保存に成功したときにポップアップ表示される通知で、ファイルが保存された場所を確認できます
+  
+<img width="305" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/a711d13f-faad-4250-930a-5d1997bb52a2">
+
+24. ファイルをコピーし、SDカードのゲームIDフォルダ（SD/atmosphere/contents）に移動します
+
+25. romfsフォルダに入ります
+
+26. UI`というフォルダを作成します
+
+27. そのフォルダの中に `Icon` というフォルダを作成します
+
+28. そのフォルダの中に`Badge`というフォルダを作成します
+
+29. そのファイルを `Badge` フォルダ内に貼り付けます
+
+あなたはそのバッジを置き換えるためのModを作成しました！ご覧の通り、LayeredFSは与えられたファイルのみを置き換えるため、romfs内で置き換えたいファイルのディレクトリを再作成する必要があります。挑戦してみたい場合は、バナーを置き換えるモッドを作成してみてください。プロセスは同じですが、異なるフォルダと画像を使用します。バナーフォルダは `Npl` と呼ばれていることを忘れないでください。
+
+
+
 
