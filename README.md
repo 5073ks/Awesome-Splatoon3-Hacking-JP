@@ -682,17 +682,17 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
 7. `Use Old Exporter`にチェックを入れ、`Use Texture Channel Swaps`のチェックを外します。
 8. もう一度説明するのが面倒なので、古い方法の[このセクション](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#6-toggle-use-old-exporter-and-untoggle-use-texture-channel-swaps)を参照してください。
 
-### 9. Save the .bfres file using the save icon in the top left corner
+### 9. 左上の保存アイコンを使って.bfresファイルを保存します
 
-10. Recompress the file using Tools > Compression > ZSTD > Compress and compress the bfres file
-11. remove the "td" at the end of `zstd` to make it just say 'zs' and then save that file to the model folder of your sd card romfs directory.
+10. Tools > Compression > ZSTD > Compressを使用してファイルを再圧縮し、bfresファイルを圧縮します
+11. `zstd`の末尾にある「td」を削除して「zs」と表示させ、そのファイルをSDカードのromfsディレクトリ内のモデルフォルダーに保存してください。
 
-TIP : You can combine these 2 modding tecniques that you've learned so far to create custom icons and badges for your reskin just like my [Comet Range Blaster mod!](https://gamebanana.com/mods/439151) To learn how to make 2D icons from 3D models, here is a link to a small tutorial inside the repo. (TO BE MADE)
+TIP: これまでに学んだ2つのモッディングテクニックを組み合わせることで、私の[Comet Range Blaster mod](https://gamebanana.com/mods/439151)のように、リスキン用のカスタムアイコンやバッジを作成できます。3Dモデルから2Dアイコンを作成する方法については、リポジトリ内の小さなチュートリアルへのリンクがあります。（作成予定）
 
-# Replacing Text.
-This is how i made my Google Translate Mod. Hours of copying text from the game and putting it through translate a million times. Cant believe im gonna do the same thing for side order
+# テキストの置き換え
+これは私がGoogle Translate Modを作った方法です。ゲームからテキストをコピーして何百万回も翻訳にかける作業を何時間もしました。Side Orderのために同じことをするなんて信じられません
 
-Anyways enough of my crippling anxiety, lets start by [downloading the required editor](https://github.com/DesperC/Awesome-Splatoon3-Hacking?scrlybrkr=c562aa65#text-replacement)
+とにかく、私の重度の不安の話はこれくらいにして、まずは[必要なエディターをダウンロードします](https://github.com/DesperC/Awesome-Splatoon3-Hacking?scrlybrkr=c562aa65#text-replacement)
 
 I would reccomend setting Kuriimu as your default .msbt editing program so you dont need to drag the file in the program to open it every time.
 
