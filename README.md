@@ -91,3 +91,8 @@ Lockpick_RCMへのリンクは許可されていませんが、Githubの多く�
 次に、[スプラトゥーン3 Save Editor](https://flexlion.github.io/saveeditor.html)にアクセスして、セーブデータの殆どすべてを変更し、その後、再ダウンロードしてください（新しいセーブファイルの名前が変更されている場合は、再び `save.dat` に戻す必要があります）
 
 スプラトゥーン3に再インポートするには、上記のチュートリアルの後半を参照してください
+
+#Modの使い方/インストール方法
+最初のMODを作成する前に、実際にインストールする方法を学ぶ必要があります。SDカードのルートを開いてください（エミュレーターの場合は仮想SDカードのルートへ）
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/4b9f7abb-1085-4121-bbbb-ade78938816b)
