@@ -52,7 +52,7 @@
 ### モデルの置き換え
 - [Blender](https://www.blender.org/) または他の3Dエディターとその使い方の知識が必要です。基本的に3Dモデルの経験が必要です
 
-- ### Text Replacement
+### Text Replacement
 - [Kuriimu](https://github.com/IcySon55/Kuriimu) または [Kuriimu 2](https://github.com/FanTranslatorsInternational/Kuriimu2)
 Kuriimu 2はより永続的なインストール方式であり、Kuriimuは軽量でポータブルなソリューションです
 
@@ -63,7 +63,7 @@ Kuriimu 2はより永続的なインストール方式であり、Kuriimuは軽�
 - [Foobar2000](https://www.foobar2000.org/) + [VGMStream](https://www.foobar2000.org/components/view/foo_input_vgmstream)
 - Audio Editor. 個人的には [Audacity](https://www.audacityteam.org)
 
-- # RomFSのダンプ
+# RomFSのダンプ
 
 ### エミュレータ (初心者推奨) (Switchを使用しない場合は必須)
 （インストールしたいアップデートやDLCがある場合は、NSP形式でインストールしてください）ゲームを右クリックし、「RomFSをダンプ」を選択します。**これらのファイルをどこにダンプしたかを必ず覚えておくか、覚えやすい場所に置いておいてください**
