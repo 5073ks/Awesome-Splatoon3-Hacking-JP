@@ -977,15 +977,15 @@ Params.packにある Coop という名前のファイルは、サーモンラン
 
 11. 「240」と「120」は、10倍されたダメージの数値です。小数点以下の値が必要な場合のために、余分なゼロがあります。ですので、最大ダメージと最小ダメージを1000に設定して、常に100のダメージを与えるようにしましょう。
 
-12. Lets also give nova perfect RNG. To do this, scroll down to the bottom section `WeaponParam`
+12. では、NOvaに完璧なRNGを与えよう。そのためには、一番下の`WeaponParam`セクションまでスクロールしてください
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/4fd0b12c-24ee-442a-924e-0151b75ae3b9)
 
-13. RNG is under the 2 variables that contain `DegSwerve` Jump_DegSwerve is jump RNG and Stand_DegSwerve is ground RNG. set them both to 0
+13. RNGは、`DegSwerve`を含む2つの変数の下にあります。`Jump_DegSwerve`はジャンプ時のRNGで、`Stand_DegSwerve`は地上時のRNGです。両方を0に設定してください。
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3a20c4bc-2cec-49c0-aa3b-9442c2587d87)
 
-14. now on to fire rate. the `RepeatFrame` variable. Set it to 1 to make it fire every frame. i dont know what setting it to 0 will do and im too scared to try
+14. 次は発射レートです。`RepeatFrame`変数を1に設定して、毎フレーム発射できるようにします。0に設定するとどうなるかわからないので、試すのはちょっと怖い
 
 15. Finally, range. scroll up to the line called `MoveParam` (should be line 18) and find the variable called `SpawnSpeed`. this is the range. but because its so small, just adding 1 or 2 will make it shoot across the map. although you can set this as high or as low as you want. Set the highlighted value on this line to a larger number
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fa70d5a0-4ef8-4cae-8843-8a4df3d4853f)
