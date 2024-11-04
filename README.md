@@ -109,7 +109,7 @@ atmosphereフォルダを開いて、`contents`という名前のフォルダを
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fa9e5974-2c8f-4f7b-a81e-55c6e1ed08a7)
 
-Flexlionはこれで完全にインストールされました！さあ、MODを取り付けよう
+Flexlionはこれで完全にインストールされました！さあ、Modを入れてみよう
 
 [Gamebananaのスプラトゥーン3 Mods](https://gamebanana.com/mods/games/15056)にアクセスして、Modを入手します。
 
@@ -125,7 +125,7 @@ Flexlionはこれで完全にインストールされました！さあ、MODを
 
 SDカードを取り出し、Switchに入れて、再度atmosphere CFWを起動します。やり方を忘れた場合は、[このガイド](https://rentry.org/EristaEmuNAND#step-4)を参照してください。
 
-良さそうだ！MODのインストール方法がわかったところで、次はMODの作り方を見てみよう。基本的なUI画像置換MODの作り方を説明します
+良さそうだ！Modのインストール方法がわかったところで、次はModの作り方を見てみよう。基本的なUI画像置換Modの作り方を説明します
 
 # ファイル形式（参考用）
 なぜスプラトゥーン3はromfsフォルダ内で`.zs`ファイルしか使わないのか不思議に思うかもしれません。ZS は実は ZSTD Compression の略で、ファイルの末尾に `.zs` をつけるだけです。以下は、ファイルの中にあるその他のファイル形式です。いくつかのファイルは、私がそれらについての知識を持っていないため、まだここに文書化されていません。
