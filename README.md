@@ -384,35 +384,35 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
 
 38. 「Search All」をクリックします
 
-39. We want the line that has "BNTX" in all caps. That should always be the second line
+39. 「BNTX」と大文字で書かれている行を探します。それは常に2行目にあるはずです
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/f5a733bc-4c1d-4508-9bca-9ce4244b0ffe)
 
-40. Click it to go to it.
+40. クリックするとそのページに移動します。
 
-41. Click Right before the highlighted portion (42 4E 54 58) right click and click "Paste Write." You should now see a lot of red text.
+41. ハイライトされた部分（42 4E 54 58）の直前を右クリックし、「Paste Write」をクリックします。すると、多くの赤いテキストが表示されるはずです。
 
-42. Hit `Ctrl` + `S` to save it. The text should be normal now. You can close the hex editor. (A `.bak` file might have been created. Ignore it)
+42. `Ctrl` + `S`を押して保存します。テキストが正常になっているはずです。これで、Hex Editorを閉じても大丈夫です（`.bak`ファイルが作成されているかもしれませんが、無視して構いません）
 
-43. Lets check if it worked. Drag the `.bfres` file into toolbox. If everything worked, you should see your textures on it now.
+43. 上手くいったか確認しましょう。.bfres`ファイルをツールボックスにドラッグしてください。上手くいけば、テクスチャが表示されるはずです。
 
-44. Go to Tools > Compression > ZSTD > Compress
+44. Tools > Compression > ZSTD > Compressにを選択します
 
-45. Navigate to your folder with the `.bfres` file you just opened and select it.
+45. 先ほど開いた`.bfres`ファイルがあるフォルダに移動して、そのファイルを選択します
 
-46. Delete the "td" at the end of `zstd` on the file. it should now read Model_Name.bfres.zs
+46. ファイル名の末尾にある「td」を削除します。これでファイル名は「Model_Name.bfres.zs」となります
 
-47. Now navigate to your `romfs` folder for your SD card where you keep mods for the game. Inside your `romfs` location, make a folder called "Model" if it isnt there already.
+47. 次に、ゲームのために mods を保存している SD カードの `romfs` フォルダーに移動します。まだ存在しない場合は、その中に「Model」というフォルダーを作成します。
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/780d6b5e-5b70-4076-bce3-c84fd9d0f1b2)
-ignore the 485348974563 mods I have in there its not important
+そこにある 485348974563 の mod は無視してください。重要ではありません
 
-49. Save the `.bfres.zs` inside the model folder
+49. `.bfres.zs`をモデルフォルダ内に保存します
 
-50. Boot up the game
+50. ゲームを起動してください
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/95cf45d1-afa5-4a15-b22a-21152ccd8e6e)
 
-Awesome! You just finished your own weapon reskin.
+素晴らしい！あなたは自分の武器のリスキンを完成させたよ！
 
 
