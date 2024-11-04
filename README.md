@@ -633,53 +633,451 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
 
 今は、ベース画像テクスチャAlbを変更しましょう。すべてのマップについて学びたいなら、下にリストを作りました。まだこれらのテクスチャをいじることはお勧めしませんので、これは将来の参考用の別のリストです。興味がなければ、そのリストの下にスキップしてください。
 
-### Texture Names
-`Alb - Albedo` Base image texture. Can also be called `Diffuse`, `Diff`, or `Dif`
+### テクスチャの名前
+`Alb - Albedo` ベース画像テクスチャ。`Diffuse`、`Diff`、または`Dif`とも呼ばれることがある
 
-`Mlt` Also a base image texture **Not to be confused with Mtl textures**
+`Mlt` ベース画像テクスチャ **Mtl テクスチャと混同しないでください**
 
-`Tcl - Team Color` An image mask that tells specific parts of the model to be the ink color of the team and how much. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Tcl - Team Color` 特定のモデルの部分をチームのインクの色とその強さを示す画像マスク。黒は強度0、灰色は明るさに応じて0から1の範囲、白は強度1を意味する
 
-`Ao - Ambient Occlusion` Adds detail/shadows to base textures **Not to be confused with the purpose and functionality of Nrm textures**
+`Ao - Ambient Occlusion` 基本テクスチャにディテールや影を追加します。**Nrmテクスチャの目的や機能と混同しないでください。**
 
-`Mtl - Metalness` An image mask that tells specific parts of the model to be matalic and how much. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Mtl - Metalness` 特定の部分を金属的にするための画像マスクであり、その強さを示します。黒は0の強度、灰色は0から1の強度（暗いまたは明るいほど）、白は1の強度を意味する
 
-`Rgh - Roughness` An image mask that tells specific parts of the model to have a specified roughness value. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Rgh - Roughness` 特定の部分に指定された粗さの値を持たせるための画像マスクです。黒は0の強度、灰色は0から1の強度（暗いまたは明るいほど）、白は1の強度を意味する
 
-`Nrm - Normal Map` Adds details to a model's surcace using vectors extracted from the image for very fine details without adding model geometry. They also look very pretty
+`Nrm - Normal Map` 画像から抽出したベクターを使用して、モデルの表面に非常に細かいディテールを追加します。モデルのジオメトリを追加することなく、見た目もとても美しい
 
-`2cl - Ink Damage Effect` This is used to tell the game where on the model to display the enemy ink material when damage is taken. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`2cl - Ink Damage Effect` これは、ダメージを受けたときにモデルのどこに敵のインク素材を表示するかをゲームに指示するために使用されます。黒は0の強度を意味し、灰色は明るさに応じて0から1の間の強度を持ち、白は1の強度を意味する
 
-`Mfk - Secondary Normal Map` A very rare map to see paired with a model. This acts as even finer details to the model and very annoying to work with.
+`Mfk - Secondary Normal Map` モデルと組み合わせて見ることが非常に珍しいマップです。これはモデルにさらに細かいディテールを加える役割を果たしますが、扱うのが非常に面倒
 
-`Opa - Opacity` Used to set opacity values to specific parts of the model. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Opa - Opacity` モデルの特定の部分に不透明度の値を設定するために使用されます。黒は0の強度、灰色は0から1の強度（明るさや暗さに応じて）、白は1の強度を意味する
 
-`Emm - Emission` An image mask that tells what parts of the model need to have light emission and how strong. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Emm - Emission` モデルのどの部分が光を発する必要があり、その強さをどのように設定するかを示す画像マスクです。黒は0の強度、灰色は0から1の強度（明るさや暗さに応じて）、白は1の強度を意味する
 
-`Trm - Transmission` Used to emulate a subsurface scattering effect on a model. usually best to not mess with these
+`Trm - Transmission` モデルにサブサーフェススキャッタリング効果をエミュレートするために使用されます。基本的には、これらに手を出さない方が良い
 
-`Thc - Thickness` Helps make the transmission look better. Always paired with a Trm texture. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Thc - Thickness` 伝送をより良く見せるのに役立ちます。常に Trm テクスチャとペアになっています。黒は 0 強度、灰色は暗さや明るさに応じて 0 から 1 の強度、白は 1 強度を意味する
 
-`Hlt / Mac - Highlight` Used to make something very shiny. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Hlt / Mac - Highlight` 何かを非常に光沢のあるものにするために使用されます。黒は 0 強度、灰色は暗さや明るさに応じて 0 から 1 の強度、白は 1 強度を意味する
 
-`Rft - Lightwarp` Emulates a [Frensel Effect](https://www.3drender.com/glossary/fresneleffect.htm#:~:text=Fresnel%20Effect%20(pronounced%20"fre-,depends%20on%20the%20viewing%20angle.)) as well as the color of it
+`Rft - Lightwarp` [フレネル効果](https://www.3drender.com/glossary/fresneleffect.htm#:~:text=Fresnel%20Effect%20(pronounced%20"fre-,depends%20on%20the%20viewing%20angle.))をエミュレートし、色も表現する
 
-`Fxm - Effect Mask` Used to mask various material specific effects. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Fxm - Effect Mask` さまざまな材質特有の効果をマスクするために使用されます。黒は0の強度を意味し、灰色は明るさに応じて0から1の強度を示し、白は1の強度を意味する
 
-`Hlm - Lightwarp Effect Mask` Used to mask a lightwarp texture. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Hlm - Lightwarp Effect Mask` ライトワープテクスチャをマスクするために使用されます。黒は0の強度を意味し、灰色は明るさに応じて0から1の強度を示し、白は1の強度を意味する
 
-`Mlta / Mltb - Special Effects` Can be used for anything. Nothing specific
+`Mlta / Mltb - Special Effects` 何にでも使用できます。特に決まった用途はなし
 
-`Mai - Skin Mask` Image mask usually used to define what part of the model is skin and what is not. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+`Mai - Skin Mask` モデルのどの部分が肌であり、どの部分が肌でないかを定義するために通常使用される画像マスクです。黒は0の強度、灰色は明るさに応じて0から1の強度（暗いまたは明るい）を意味し、白は1の強度を意味する
 
-Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/PastaOwO/Squidnodes/wiki/Materials-and-Textures?scrlybrkr=c562aa65)
+出典: [PastaOwOのSquidnodesマテリアルとテクスチャのWiki](https://github.com/PastaOwO/Squidnodes/wiki/Materials-and-Textures?scrlybrkr=c562aa65)
 
-2. decompress the file using Tools > Compression > ZSTD > Decompress and save it to a place you can find it.
-3. drag the `.bfres` file you just decompressed into toolbox
-4. click on the model folder.
-5. right click on the model that uses the texture(s) you want to modify
-6. export it as `.dae` to the same folder your `.bfres` is in.
-7. check `Use Old Exporter` and uncheck `Use Texture Channel Swaps`
-8. refer to [this section](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#6-toggle-use-old-exporter-and-untoggle-use-texture-channel-swaps) of the old method because i cant be bothered to explain again.
+2. ファイルを解凍するには、Tools > Compression > ZSTD > Decompress に移動し、見つけやすい場所に保存してください。
+3. 解凍した `.bfres` ファイルをToolboxにドラッグします。
+4. モデルフォルダをクリックします。
+5. 修正したいテクスチャ(s)を使用しているモデルを右クリックします。
+6. `.bfres`と同じフォルダに`.dae`としてエクスポートします。
+7. `Use Old Exporter`にチェックを入れ、`Use Texture Channel Swaps`のチェックを外します。
+8. もう一度説明するのが面倒なので、古い方法の[このセクション](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#6-toggle-use-old-exporter-and-untoggle-use-texture-channel-swaps)を参照してください。
+
+### 9. Save the .bfres file using the save icon in the top left corner
+
+10. Recompress the file using Tools > Compression > ZSTD > Compress and compress the bfres file
+11. remove the "td" at the end of `zstd` to make it just say 'zs' and then save that file to the model folder of your sd card romfs directory.
+
+TIP : You can combine these 2 modding tecniques that you've learned so far to create custom icons and badges for your reskin just like my [Comet Range Blaster mod!](https://gamebanana.com/mods/439151) To learn how to make 2D icons from 3D models, here is a link to a small tutorial inside the repo. (TO BE MADE)
+
+# Replacing Text.
+This is how i made my Google Translate Mod. Hours of copying text from the game and putting it through translate a million times. Cant believe im gonna do the same thing for side order
+
+Anyways enough of my crippling anxiety, lets start by [downloading the required editor](https://github.com/DesperC/Awesome-Splatoon3-Hacking?scrlybrkr=c562aa65#text-replacement)
+
+I would reccomend setting Kuriimu as your default .msbt editing program so you dont need to drag the file in the program to open it every time.
+
+1. In your romfs dump, open the Mals folder. i'm assuming youre language is english so we want this file right here
+
+<img width="224" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1d31f2c2-80d4-4efc-9c39-24d676f2721e">
+
+2. Drag the file into toolbox to open it. there are a ton of .msbt files in here so here is a small list of where important ones are as well as important prefixes
+
+any files starting with `msn` or `mission` or any files located inside the `LogicMsg` folder or any files in `CommonMsg/Mission` relate to hero mode
+
+any files starting with `vs` or `versus` or `lobby` relate to multiplayer
+
+you can find the splashtag titles files in `CommonMsg/Byname`
+
+weapon names are in `CommonMsg/Weapon` 
+
+try looking at the glossary file in `CommonMsg/Glossary.msbt` if you want to find names of characters
+
+gear names can be found at `CommonMsg/Gear`
+
+text relating to salmon run is any file that has `Coop` or `LobbyCoop` in the name
+
+if you want to edit what Deep Cut says on the news, search for any files starting with `News`
+
+Toolbox cant edit the msbt files so we need to export them to edit them.
+
+3. Find any `.msbt` files you want. right click on them and click Export Raw Data
+
+<img width="305" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/abb00fc6-c6d7-4173-8fc5-d071411ac62a">
+
+4. Save the file to a place you will remember
+
+5. open Kuriimu then open the .msbt file with Kuriimu by dragging it over
+
+6. click yes to keep a backup. this is very helpful for multiple reasons then just if you need to revert
+
+<img width="295" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/9724c759-6e35-438c-acbb-95893a3eb744">
+
+7. Click this icon here to get a preview inside the text entries
+
+<img width="249" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e6a1cb3c-c657-4cbf-8087-5ecf5f25cfdb">
+
+Dont worry if the entry names are gibberish. We never need to worry about names
+
+remember you can always use these 2 options to find something(s) specific (first one) or find and replace something(s) specific (second one)
+
+<img width="128" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/cf9ac1e0-ef99-4658-8414-9b0b806417db">
+
+8. Once you edit everything you want to edit, do `Ctrl` + `S` to save the file.
+
+9. back in toolbox, right click the file you just exported but now click Replace Raw Data
+
+<img width="349" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/0258b0d8-5105-4fec-bafb-3c6ff27b77dd">
+
+10. Navigate to the `.msbt` file you edited with Kuriimu. You should also see a `.bak` file there. ignore it
+
+11. select the `.msbt` file
+
+12. back in toolbox, double click the file you just replaced to open a preview of it to make sure it has your edits. toolbox can preview msbt files but it cant edit them.
+
+<img width="454" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/11143db9-66b6-47fa-88d8-70a99814a37a">
+
+13. Close the pop up window and save the file 
+
+<img width="142" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c4973c0c-a84e-4e64-ae3f-60f862ef4ff8">
+
+14. Click Yes to the promt
+
+<img width="148" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/f12a659b-2218-4a5a-a392-6499eedb39e9">
+
+15. Copy the `.sarc` file we just edited and navigate to your SD card romfs directory. Make a new folder called Mals and paste the file in there
+
+16. Boot up the game
+
+NOTE: You will need to 
+
+Text editing is one of the simplest but most effective ways of modding in my opinion. I really enjoy making characters just say the dumbest things.
+
+# Editing UI Layouts
+
+Not started yet but you can use when ive already taught you to edit the files in the Layout folder
+
+# Replacing Audio
+This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to the next section. Otherwise follow this tutorial
+
+cant be bothered to write out my own right now. might do this last. for now, refer to [this tutorial](https://gamebanana.com/tuts/15422)
+
+# Custom Kits
+Time for your first game hack. Weapon kits are stored in romfs/RSDB/`WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
+
+Before we get started, here is a list of all the subs and specials that can go on weapons
+
+`SpBlower` Ink Vac
+
+`SpCastle` Kraken
+
+`SpChariot` Crab Tank
+
+`SpEnergyStand` Tacticooler
+
+`SpFirework` Super Chump
+
+`SpGachihoko` Rainmaker
+
+`SpGreatBarrier` Big Bubbler
+
+`SpInkStorm` InkStorm
+
+`SpJetpack` Inkjet
+
+`SpMicroLaser` Killer Wail 5.1
+
+`SpMultiMissile` Tenta Missiles
+
+`SpNiceBall` Booyah Bomb
+
+`SpShockSonar` Wavebreaker
+
+`SpSkewer` Reefslider
+
+`SpSuperHook` Zipcaster
+
+`SpSuperLanding` Splashdown (yes really)
+
+`SpTripleTornado` Tristrike
+
+`SpUltraShot` Trizooka
+
+`SpUltraStamp` Ultra Stamp
+
+Sub Weapons, if there are parenthesis next to a name, that tells you its second name that can be seen in the files on occasion. The second names arent too important i just put them there so you would know.
+
+`Beacon` Beacon (`Flag`)
+
+`Bomb_Curling` Curling Bomb
+
+`Bomb_Fizzy` Fizzy Bomb (`Bomb_Piyo`)
+
+`Bomb_Quick` Burst Bomb (`Bomb_Handy`)
+
+`Bomb_Robot` Autobomb (`Bomb_Robo`)
+
+`Bomb_Splash` Splat Bomb
+
+`Bomb_Suction` Suction Bomb (`Bomb_Hold`)
+
+`Bomb_Torpedo` Torpedo (`Bomb_Tako`)
+
+`LineMarker` Line Marker (`LinMarker`)
+
+`PointSensor` Point Sensor (`MarkingBall`)
+
+`PoisonMist` Toxic Mist (`DevillBall`)
+
+`SalmonBuddy` Lil' Buddy - Needs to be modified if you want to use it on a weapon
+
+`Shield` Splash Wall
+
+`Sprinkler` Take a guess
+
+`Trap` Ink Mine
+
+Alright. Now we can get to editing kits.
+
+1. Open switch toolbox and go to Tools > Compression > ZSTD > Decompress
+
+2. Go to your romfs dump and go inside RSDB. Select `WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
+
+3. Delete the ".zs.dec" at the end of the file name so you're left with ".bfres" as the extension
+
+4. save the file in a place so it will be easy to find.
+
+5. go to where you saved the file and drag it into toolbox
+
+6. Use [this list](https://github.com/DesperC/Awesome-Splatoon3-Hacking/edit/main/README.md#this-list-is-as-of-fresh-season-2023) again to find your weapon.
+
+7. switch to text editor and hit "Decompile." hit `Ctr` + `F` and type in the weapon codename. dont use any underscores
+
+8. Find the paragraph that looks like this relating to your weapon
+
+<img width="667" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/23a2d883-8a23-4a45-b500-83361f70bc08">
+
+9. The only notable things you can change in this file are:
+
+- Weapon kits
+
+- Weapon Special Points
+
+- What badges you get from getting 4 and 5 star on that weapon
+
+- Weapon UI Values (a.e the game showing you how much range the weapon has)
+
+- Weapon ID. This is a bit more complicated and is explained what it is and how to do later in the guide.
+
+10. Right now, we will only need to look at these 3 lines
+
+<img width="518" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1dce16e1-0f11-4276-9370-b8a132ec3ec4">
+
+Note that this isnt the correct kit for Bamboozler because i have already messed with it. Dosent change the process for changing any weapon kit though
+
+11. Lets replace the special first. Copy the special codename you want from the list above and replace the original special
+
+This is the only part of the line that needs to be fully replaced with your special
+
+<img width="494" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e9e302e7-83bb-4650-9501-d1d57da15a3b">
+
+12. Now do the same thing for the sub weapon. Again this is the only part that should be replaced 
+
+<img width="437" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c8ec91e7-a01a-433f-9461-73ec9a66bcc6">
+
+13. If you feel like it, edit the required amount of special points for the weapon. Setting it to 0 will automatically fill the special meter again after you use it
+
+<img width="143" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/09f8ba82-3738-48f9-aac7-37de715b1366">
+
+Dont worry about the `!l` thats just telling the game that its a Int32 value meaning it can store values up to 2,147,483,647
+
+14. compile it by clicking "Compile" near the top of the window
+
+<img width="297" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/49ec7fbd-24d3-4399-aa9f-9b4e2fa0e226">
+
+15. Now save it with the save icon
+
+<img width="250" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/d1290a51-21b4-438e-b469-b1eec8d5774e">
+
+Finally, we need to recompress it
+
+16. go to Tools > Compression > ZSTD > Compress
+
+17. select the .byml you just saved
+
+18. delete the "td" at the end of the file name so the end of the file reads `.rstbl.byml.zs`
+
+19. navigate to the romfs folder on your sd card. Make a folder called RSDB and place the file in there
+
+20. Boot up the game
+
+Have fun with your new kit but be sure to take a little break if all that code overwhelmed you because the next tutorial will involve a lot of code as well.
+
+# Changing Weapon Functionality / Parameters
+
+This might be the most anticipated part for you. At the end of this walkthough you will be able to change almost anything about any main, sub, and special weapon.
+
+Right now i will just show you how to modify some very basic parameters. After this tutorial though is where everything gets more specific and i show you literally everything i know
+
+Lets change the range, damage, RNG, and fire rate of the Splattershot Nova
+
+This tutorial will have less pictures and less descriptive text for things we've already done multiple times in previous tutotials.
+
+1. Inside toolbox, lets decompress another file with ZSTD compression. You should know how to decompress and compress with ZSTD by now
+
+2. go to your romfs dump and open the Pack folder. Then select `Params.pack.zs`
+
+This file contains all main, sub, special weapon parameters as well as stage parameters
+
+3.  save it as `Params.pack` to a location you can find easily
+
+4.  open the newly saved `Params.pack` in toolbox
+
+We are going to search for the code name of a weapon we want to modify. If you want to modify its functionality specifically for salmon run or hero mode, add `_Msn` for hero mode or `_Coop` for salmon run to the end of the search.
+
+5.  Hit the search button and search for ShooterQuickLong. To find splattershot nova. however this brings up 2 files
+
+<img width="107" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/6b72cce2-f1b0-4ee2-bf7b-95f0b0ef3a21">
+
+<img width="304" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e33eb047-ff30-4360-8afc-baad4aae8a06">
+
+We always want the one that dosent have "Coop" in the name. Coop means Co-op which means salmon run. any file in Params.pack with Coop in the name only changes specific parts of the weapon in salmon run so we dont care about it.
+
+6. Click the file without Coop in the name to locate it in the file view. Close the search window now
+
+7. double click the highlighted file.
+
+8. switch to text editor and hit "Decompile"
+
+Lets start by giving it 100 damage just for the hell of it.
+
+9. Locate the line that says DamageParam. Should be at line 15
+
+10. ValueMax and ValueMin are the only values we care about 
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3f69a8f3-b325-4806-b846-fc88b141207f)
+
+11. 240 and 120 are the damage numbers multiplied by 10. the extra zero is in case a decimal value is needed. so lets set the Max and Min damage to 1000 to make it do 100 damage no matter what.
+
+12. Lets also give nova perfect RNG. To do this, scroll down to the bottom section `WeaponParam`
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/4fd0b12c-24ee-442a-924e-0151b75ae3b9)
+
+13. RNG is under the 2 variables that contain `DegSwerve` Jump_DegSwerve is jump RNG and Stand_DegSwerve is ground RNG. set them both to 0
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3a20c4bc-2cec-49c0-aa3b-9442c2587d87)
+
+14. now on to fire rate. the `RepeatFrame` variable. Set it to 1 to make it fire every frame. i dont know what setting it to 0 will do and im too scared to try
+
+15. Finally, range. scroll up to the line called `MoveParam` (should be line 18) and find the variable called `SpawnSpeed`. this is the range. but because its so small, just adding 1 or 2 will make it shoot across the map. although you can set this as high or as low as you want. Set the highlighted value on this line to a larger number
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fa70d5a0-4ef8-4cae-8843-8a4df3d4853f)
+
+16. click Compile at the top
+
+17. once you save that file, make sure to save the Params.pack file too
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b00f54ea-b1f0-455c-a2c0-421ab5982f02)
+
+18. compress the saved file with ZSTD. and put your newly created `Params.pack.zs` inside the Pack folder in your SD card romfs directory
+
+![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/d0844ef8-1f92-4672-b676-60ac8be23e4b)
+
+29. Boot up the game
+
+Nova is finally a functioning weapon. 
+
+# Specific Weapon Parameters
+This section will have sub sections that all focus on telling you where and how to modify more specific weapon functionality. general functions of a class will not be covered as they are either unimportant or easy to understand yourself. If you dont see a specific variable in the wepon you're editing, try adding that variable. For example, dualies dodge number is based on the `RepeatCnt` variable. However, that variable only shows up on tetras. This is because it's left at the default value (2) for all other dualies. All you need to do in this case is add that variable in the same place and in the same way you see it on tetras.
+
+This section will not cover everything you can do. Just some interesting things you can start with
+
+### Ink Consumption
+Down in the `WeaponParam` section for your weapon you will find a variable called `InkConsume` this variable tells the game how much ink to remove from the tank **per shot**.
+
+### Paint Parameters
+find a section called `PaintParam` these give you a ton of customization for how much paint the weapon does. Multiplying all the values by 10 gives you some really fun results.
+
+### RNG
+Down in the `WeaponParam` section for your weapon you will find multiple variables that start with `Jump_DegBias` and ` Stand_DegBias`. The Int values relate to how quickly (in frames) the RNG takes effect and the float values relate to how much RNG the weapon has in what situation (Jump or Stand)
+
+### Range
+At around line 18 where `MoveParam` is, find the variable called `SpawnSpeed`. While it might not look like it, this is range. The number represents range based on the weapon meaning something like inkbrush and 
+ E-Liter will have similar values for this. Try not to think about it too hard. 
+
+### Damage
+Everything in `DamageParam` aside from `ReduceEndFrame` and `ReduceStartFrame`
+
+### Fire Rate
+Down in `WeaponParam` find the variable called `RepeatFrame` this tells the game to shoot a bullet every `X` frames 
+
+### Homemade Aimbot
+Up in `CollisionParam`, edit every variable that contains the word "Radius" to be maybe 50X larger. Also make sure that all of those values are the same. This increases the radius of your bullet's hitbox making it easier to hit targets as well as objects blocking the way.
+
+# Class Specific Parameters
+
+### Chargers - Increase Air Charge Speed
+
+### Chargers - Force Scope, Divided Shots, and/or Charge Holding
+
+### Dualies - Roll Count
+
+### Dualies - Shoot while Rolling
+
+### Dualies - End Lag
+
+### Shooters - L-3 and H-3 Shooting (3 Shots)
+
+### Splatanas - 1-Shot Radius
+
+### Brushes - Rolling Ink Resistance
+
+### Brushes - Roll Speed
+
+### Blasters - Explosion Radius
+
+### Splatlings - Recharge while Shooting
+
+### Stringers - Charge Hold
+
+### Stringers - Jump Tilt Angle
+
+### Stringers - Trajectory Guide 
+
+### Object Place Limit
+
+# Misc
+
+### Actor Swapping
+
+### Weapon ID Swapping
+
+### Ink Splatter Textures
+
+### Stage Editing
+Stage editing is pretty complex but right now, its not even possible with most of the stages. toolbox kinda dosent compile some of the byml files correctly so until thats fixed, dont worry about it
+
+### Replacing Fonts
+
+
+### Closing Notes
 
 
