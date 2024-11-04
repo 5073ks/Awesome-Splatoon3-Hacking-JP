@@ -415,4 +415,271 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
 
 素晴らしい！あなたは自分の武器のリスキンを完成させたよ！
 
+# テクスチャの置き換え
+
+**この方法はまだ実験段階です。失敗した場合は、テクスチャの置き換えガイドを参照してください。この方法の方が信頼性が高いですが、少し時間がかかります。**
+
+お気に入りの武器のベーステクスチャを変更するMODを作りましょう
+
+1. まず、`romfs/Model`フォルダーに入って、`Wmn`を検索します。これにより、主な武器モデルのみが表示されるように結果がフィルタリングされます。
+
+もしギアのパーツを変更したい場合、私の友人のJohn#1878がDiscordで作成した、3.0.0までのすべてのギアのコーディネート名と画像のリストがあります
+
+[アタマ](https://docs.google.com/document/d/1SaQOljCMUCjGNYzhnbqUHCXR1vrdef67vUVbcv_2Lkg/edit)
+
+[フク](https://docs.google.com/document/d/1bIje-QhxGa0EThWjB5V9xj_Jqfj9D8Bjkb-Wu9ruNSg/edit)
+
+[クツ](https://docs.google.com/document/d/1MwfrztugDbqNlU6S87Oflz-WQrSwxC20zV25aqNwn9k/edit)
+
+### Sizzle Season 2023の武器リスト
+
+`Blaster_Coop` Grizzco Blaster
+
+`Blaster_Light` Rapid Blaster + Rapid Blaster Pro
+
+`Blaster_Light_Cstm01` Rapid Blaster Deco
+
+`Blaster_Light_Cstm11` Rapid Blaster Pro Deco
+
+`Blaster_LightShort` Clash Blaster
+
+`Blaster_LightShort_Cstm01` Clash Blaster Neo
+
+`Blaster_Long` Range Blaster
+
+`Blaster_Middle` Blaster
+
+`Blaster_Precision` S-Blast 92
+
+`Blaster_Short` Luna Blaster
+
+`Blaster_Short_Cstm01` Luna Blaster Neo
+
+`Brush_Heavy` Painbrush
+
+`Brush_Mini` Inkbrush
+
+`Brush_Mini_Cstm01` Inkbrush Nouveau
+
+`Brush_Normal` Octobrush
+
+`Charger_Coop` Grizzco Charger
+
+`Charger_Keeper` Goo Tuber
+
+`Changer_Light` Bamboozler 14 Mk I (my beloved)
+
+`Charger_Long` E-Liter + E-Liter Scoped
+
+`Charger_LongB` Splatoon 2 E-Liter (For Amiibo)
+
+`Charger_NormalT` Splat Charger
+
+`Charger_NormalT_Cstm01` Zekkofin Charger
+
+`Charger_Pencil` Snipewriter 5H
+
+`Charger_Quick` Squiffer
+
+`Maneuver_Dual` Dualie Squelchers
+
+`Maneuver_Dual_Cstm01` Custom Dualie Squelchers
+
+`Maneuver_Gallon` Glooga Dualies
+
+`Maneuver_NormalT` Splat Dualies
+
+`Maneuver_Short` Dapple Dualies
+
+`Maneuver_Short_Cstm01` Dapple Dualies Nouveau
+
+`Maneuver_Stepper` Dark Tetra Dualies
+
+`Maneuver_Stepper_Cstm01` Light Tetra Dualies
+
+`Roller_BrushNormal` Splatoon 2 Octobrush (For Amiibo)
+
+`Roller_Compact` Carbon Roller
+
+`Roller_Compact_Cstm01` Carbon Roller Deco
+
+`Roller_Heavy` Dynamo Roller
+
+`Roller_Heavy_Cstm01` Gold Dynamo Roller (Not Released)
+
+`Roller_Hunter` Flingza Roller
+
+`Roller_NormalT` Splat Roller
+
+`Roller_NormalT_Cstm01` Krak-On Splat Roller
+
+`Roller_Wide` Big Swig Roller
+
+`Roller_Wide_Cstm01` Big Swig Roller Express
+
+`Saber_Coop` Grizzco Splatana
+
+`Saber_Light` Splatana Wiper (Wiper can also be seen in other places named `Saber_Lite` instead)
+
+`Saber_Light_Cstm01` Splatana Wiper Deco
+
+`Saber_Normal` Splatana Stamper
+
+`Shelter_Compact` Undercover Brella
+
+`Shelter_Coop` Grizzco Brella
+
+`Shelter_Normal` Splat Brella
+
+`Shelter_Wide` Tenta Brella
+
+`Shelter_Wide_Cstm01` Sorella Tenta Brella
+
+`Shooter_Blaze` Aerospray MG
+
+`Shooter_Blaze_Cstm01` Aerospray RG
+
+`Shooter_Expert` Splattershot Pro
+
+`Shooter_Expert_Cstm01` Forge Splattershot Pro
+
+`Shooter_First` Splattershot Jr.
+
+`Shooter_FirstCstm01` Custom Splattershot Jr.
+
+`Shooter_Flash` Squeezer
+
+`Shooter_Gravity` .52 Gal
+
+`Shooter_Heavy` .96 Gal
+
+`Shooter_Heavy_Cstm01` .96 Gal Deco
+
+`Shooter_Long` Jet Squelcher
+
+`Shooter_Long_Cstm01` Custom Jet Squelcher
+
+`Shooter_Msn0Lv0` Hero Shot (All 3 Phases)
+
+`Shooter_Normal` Splatoon 1 Splattershot (For Amiibo)
+
+`Shooter_NormalB` Splatoon 2 Splattershot (For Amiibo)
+
+`Shooter_NormalT` Splattershot
+
+`Shooter_NormalT_Cstm01` Tentatek Splattershot
+
+`Shooter_QuickLong` Splattershot Nova
+
+`Shooter_QuickLong_Cstm01` Anakai Splattershot Nova
+
+`Shooter_Quickmiddle` N-Zap 85
+
+`Shooter_QuickMiddle_Cstm01` N-Zap 89
+
+`Shooter_RvLv0` Rival Octolong Octoshot (Hero Mode)
+
+`Shooter_Short` Sploosh-o-Matic + Splash-o-Matic
+
+`Shooter_Short_Cstm01` Sploosh-o-Matic Neo
+
+`Shooter_Short_Cstm11` Splash-o-Matic Neo
+
+`Shooter_Triple` L-3 Nozzlenose
+
+`Shooter_Triple_Cstm01` L-3 Nozzlenose D
+
+`Shooter_TripleMiddle` H-3 Nozzlenose
+
+`Shooter_TripleMiddle_Cstm01` H-3 Nozzlenose D
+
+`Slosher_Bathtub` Bloblobber
+
+`Slosher_Coop` Grizzco Slosher
+
+`Slosher_Diffusion` Tri-Slosher
+
+`Slosher_Diffusion_Cstm01` Tri-Slosher Nouveau
+
+`Slosher_Launcher`Sloshing Machine
+
+`Slosher_StrongT` Slosher
+
+`Slosher_StrongT_Cstm` Slosher Deco
+
+`Slosher_Washtub` Explosher
+
+`Spinner_Downpour` Ballpoint Splatling
+
+`Spinner_HyperT` Hydra Splatling
+
+`Spinner_QuickT` Mini Splatling
+
+`Spinner_QuickT_Cstm01` Zink Mini Splatling
+
+`Spinner_Serein` Nautilus 47
+
+`Spinner_StandardT` Heavy Splatling
+
+`Spinner_StandardT_Cstm01` Heavy Splatling Deco
+
+`Stringer_Coop` Grizzco Stringer
+
+`Stringer_Normal` Tri-Stringer
+
+`Stringer_Short` REEFLUX-450
+
+これをタイプするのに45分かかったと言ったら信じてくれますか？
+
+今は、ベース画像テクスチャAlbを変更しましょう。すべてのマップについて学びたいなら、下にリストを作りました。まだこれらのテクスチャをいじることはお勧めしませんので、これは将来の参考用の別のリストです。興味がなければ、そのリストの下にスキップしてください。
+
+### Texture Names
+`Alb - Albedo` Base image texture. Can also be called `Diffuse`, `Diff`, or `Dif`
+
+`Mlt` Also a base image texture **Not to be confused with Mtl textures**
+
+`Tcl - Team Color` An image mask that tells specific parts of the model to be the ink color of the team and how much. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Ao - Ambient Occlusion` Adds detail/shadows to base textures **Not to be confused with the purpose and functionality of Nrm textures**
+
+`Mtl - Metalness` An image mask that tells specific parts of the model to be matalic and how much. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Rgh - Roughness` An image mask that tells specific parts of the model to have a specified roughness value. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Nrm - Normal Map` Adds details to a model's surcace using vectors extracted from the image for very fine details without adding model geometry. They also look very pretty
+
+`2cl - Ink Damage Effect` This is used to tell the game where on the model to display the enemy ink material when damage is taken. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Mfk - Secondary Normal Map` A very rare map to see paired with a model. This acts as even finer details to the model and very annoying to work with.
+
+`Opa - Opacity` Used to set opacity values to specific parts of the model. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Emm - Emission` An image mask that tells what parts of the model need to have light emission and how strong. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Trm - Transmission` Used to emulate a subsurface scattering effect on a model. usually best to not mess with these
+
+`Thc - Thickness` Helps make the transmission look better. Always paired with a Trm texture. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Hlt / Mac - Highlight` Used to make something very shiny. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Rft - Lightwarp` Emulates a [Frensel Effect](https://www.3drender.com/glossary/fresneleffect.htm#:~:text=Fresnel%20Effect%20(pronounced%20"fre-,depends%20on%20the%20viewing%20angle.)) as well as the color of it
+
+`Fxm - Effect Mask` Used to mask various material specific effects. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Hlm - Lightwarp Effect Mask` Used to mask a lightwarp texture. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+`Mlta / Mltb - Special Effects` Can be used for anything. Nothing specific
+
+`Mai - Skin Mask` Image mask usually used to define what part of the model is skin and what is not. Black means 0 intensity, grey means anywhere from 0-1 intensity depending on how dark or bright it is, and white means 1 intensity
+
+Source : [PastaOwO's Squidnodes Materials and Textures Wiki](https://github.com/PastaOwO/Squidnodes/wiki/Materials-and-Textures?scrlybrkr=c562aa65)
+
+2. decompress the file using Tools > Compression > ZSTD > Decompress and save it to a place you can find it.
+3. drag the `.bfres` file you just decompressed into toolbox
+4. click on the model folder.
+5. right click on the model that uses the texture(s) you want to modify
+6. export it as `.dae` to the same folder your `.bfres` is in.
+7. check `Use Old Exporter` and uncheck `Use Texture Channel Swaps`
+8. refer to [this section](https://github.com/DesperC/Awesome-Splatoon3-Hacking/blob/main/README.md#6-toggle-use-old-exporter-and-untoggle-use-texture-channel-swaps) of the old method because i cant be bothered to explain again.
+
 
