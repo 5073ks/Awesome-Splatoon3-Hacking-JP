@@ -37,3 +37,17 @@
 - [Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox)
 - [7-Zip](https://www.7-zip.org/) zipファイルをデフォルトで開くように、7-Zipをメインのアーカイブアプリとして設定することを強くお勧めします
 - [完全なスプラトゥーン3セーブデータ](https://ptb.discord.com/channels/410208534861447168/830855276437438485/1081218616734793738) （あなたのセーブデータがすでに必要なものすべてを持っていて、かつEdiZonを使用してセーブデータをファイルとしてエクスポートする方法を知っている場合は、これをスキップできます）。ファイルにアクセスできない場合は、たとえRyujinxを使用していなくても、[Ryujinxのディスコードサーバー](https://discord.gg/ryujinx)に参加して入手する必要があります。これはエミュレーターとSwitchの両方で動作します
+
+以下は、ゲームの特定の側面を置き換えるために必要なプログラムに関するサブセクションです。***これは、改造可能な全てのもののリストではありません。あくまで、特定の改造に必要な他のプログラムのリストです***
+
+### テクスチャの置き換え（旧）
+- Hex Editor. どんなHex Editorでもいい。個人的には [HxD](https://mh-nexus.de/en/)
+- Image Editor (Duh)
+- [Blender](https://www.blender.org/) テクスチャがモデル上でどのように見えるかを確認する
+
+### テクスチャの置き換
+- Image Editor (still, duh)
+- [Blender](https://www.blender.org/) テクスチャがモデル上でどのように見えるかを確認する
+
+### モデルの置き換え
+- [Blender](https://www.blender.org/) または他の3Dエディターとその使い方の知識が必要です。基本的に3Dモデルの経験が必要です。
