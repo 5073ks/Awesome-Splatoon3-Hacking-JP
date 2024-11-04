@@ -52,11 +52,11 @@
 ### モデルの置き換え
 - [Blender](https://www.blender.org/) または他の3Dエディターとその使い方の知識が必要です。基本的に3Dモデルの経験が必要です
 
-### Text Replacement
+### テキストの置き換え
 - [Kuriimu](https://github.com/IcySon55/Kuriimu) または [Kuriimu 2](https://github.com/FanTranslatorsInternational/Kuriimu2)
 Kuriimu 2はより永続的なインストール方式であり、Kuriimuは軽量でポータブルなソリューションです
 
-### Audio Replacement
+### オーディオの置き換え
 - [Looping Audio Converter](https://github.com/libertyernie/LoopingAudioConverter)
 - [Citric Composer](https://gota7.github.io/Citric-Composer/)
 - [Automatic BARS Patcher](https://github.com/ic-scm/automatic-bars-patcher) or [Online BARS Patcher](https://smashcustommusic.net/onlinetools/bars-patcher/)
