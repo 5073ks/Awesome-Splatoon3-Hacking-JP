@@ -1,7 +1,7 @@
 # Awesome-Splatoon3-Hacking-JP
 [DesperC](https://github.com/DesperC)によるスプラトゥーン3のハッキング/改造を学ぶためのリソースが入った非公式日本語版リポ
 
-このリポは巨大なW.I.P.であり、非常に未完成です。このレポは[DesperC](https://github.com/DesperC)によるサイドプロジェクトです。
+このリポは巨大なW.I.P.であり、非常に未完成です。このリポは[DesperC](https://github.com/DesperC)によるサイドプロジェクトです。
 
 もしあなたが行き詰まったり、助けが必要だと感じたら、[Splatoon Modding Hubディスコードサーバー](https://discord.com/invite/P6RNNvk)に気軽に参加してください。
 
