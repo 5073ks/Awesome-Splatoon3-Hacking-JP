@@ -770,11 +770,11 @@ Toolboxでは.msbtファイルを直接編集できないため、編集する�
 
 注：次のことが必要です
 
-テキスト編集は、私の意見では最もシンプルでありながら効果的な改造方法の1つです。キャラクターにただ、おかしなことを言わせるのが本当に楽しいです（笑）
+テキスト編集は、私の意見では最もシンプルでありながら効果的な改造方法の1つです。キャラクターにただ、おかしなことを言わせるのが本当に楽しいです
 
 # UIレイアウトの編集
 
-まだ始めていないが、Layoutフォルダのファイルを編集する方法はすでに説明した通りです
+まだ始めていませんが、Layoutフォルダのファイルを編集する方法はすでに説明した通りです
 
 # オーディオの置き換え
 これは完全にオプションです。もし実際に_hacking_の部分に入る方法を学びたいなら、次のセクションにスキップしてください。そうでなければ、このチュートリアルに従ってください。
@@ -858,77 +858,76 @@ Toolboxでは.msbtファイルを直接編集できないため、編集する�
 
 よし。これでキットの編集ができる。
 
-1. Open switch toolbox and go to Tools > Compression > ZSTD > Decompress
+1. Switch Toolboxを開き、Tools > Compression > ZSTD > Decompress を選択します
 
-2. Go to your romfs dump and go inside RSDB. Select `WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
+2. romfsのダンプに行き、RSDBの中に入ります。`WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`を選択します
 
-3. Delete the ".zs.dec" at the end of the file name so you're left with ".bfres" as the extension
+3. ファイル名末尾の「.zs.dec 」を削除し、拡張子を「.bfres 」にします
 
-4. save the file in a place so it will be easy to find.
+4. ファイルを見つけやすい場所に保存してください。
 
-5. go to where you saved the file and drag it into toolbox
+5. ファイルを保存した場所に移動し、Toolboxにドラッグします。
 
-6. Use [this list](https://github.com/DesperC/Awesome-Splatoon3-Hacking/edit/main/README.md#this-list-is-as-of-fresh-season-2023) again to find your weapon.
+6. もう一度[このリスト](https://github.com/DesperC/Awesome-Splatoon3-Hacking/edit/main/README.md#this-list-is-as-of-fresh-season-2023)を使って武器を探します。
 
-7. switch to text editor and hit "Decompile." hit `Ctr` + `F` and type in the weapon codename. dont use any underscores
+7. テキストエディタに切り替えて、「デコンパイル」をクリックします。次に、`Ctrl` + `F`を押して武器のコーディネート名を入力します。アンダースコアは使用しないでください
 
-8. Find the paragraph that looks like this relating to your weapon
+8. 自分の武器に関連する次のような段落を見つけます
 
 <img width="667" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/23a2d883-8a23-4a45-b500-83361f70bc08">
 
-9. The only notable things you can change in this file are:
+9. このファイルで変更できるのは次の通り:
 
-- Weapon kits
+- ウェポンキット
 
-- Weapon Special Points
+- ウェポンスペシャルポイント
 
-- What badges you get from getting 4 and 5 star on that weapon
+- そのウェポンで4つ星と5つ星を獲得すると、どのようなバッジがもらえるか
 
-- Weapon UI Values (a.e the game showing you how much range the weapon has)
+- ウェポンのUI値（例：その武器の射程距離をゲームが表示する）
 
-- Weapon ID. This is a bit more complicated and is explained what it is and how to do later in the guide.
+- ウェポンID。これは少し複雑なので、ガイドの後半でその内容と方法を説明します。
 
-10. Right now, we will only need to look at these 3 lines
+10. 今はこの3行だけを見ておけばよいでしょう
 
 <img width="518" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1dce16e1-0f11-4276-9370-b8a132ec3ec4">
 
-Note that this isnt the correct kit for Bamboozler because i have already messed with it. Dosent change the process for changing any weapon kit though
+これはBamboozlerの正しいキットではないことに注意してください。既に弄ってしまったので。どの武器キットを変更するプロセスにも影響はありません。
 
-11. Lets replace the special first. Copy the special codename you want from the list above and replace the original special
+11. 最初にスペシャルを置き換えましょう。上のリストから置き換えたいスペシャルのコードネームをコピーし、元のスペシャルと置き換えます
 
-This is the only part of the line that needs to be fully replaced with your special
+この行の中で、完全に置き換える必要があるのはこの部分だけです。
 
 <img width="494" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e9e302e7-83bb-4650-9501-d1d57da15a3b">
 
-12. Now do the same thing for the sub weapon. Again this is the only part that should be replaced 
-
+12. 今度はサブウェポンも同じようにする。ここでも、交換すべきパーツはこれだけです。
 <img width="437" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c8ec91e7-a01a-433f-9461-73ec9a66bcc6">
 
-13. If you feel like it, edit the required amount of special points for the weapon. Setting it to 0 will automatically fill the special meter again after you use it
+13. その気になったら、武器のスペシャルポイントの必要量を編集します。0に設定すると、使用後に自動的にスペシャルメーターが再び満タンになります。
 
 <img width="143" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/09f8ba82-3738-48f9-aac7-37de715b1366">
 
-Dont worry about the `!l` thats just telling the game that its a Int32 value meaning it can store values up to 2,147,483,647
+心配しないでください。`!l`は、これはInt32値であることを示しており、2,147,483,647までの値を格納できるという意味です
 
-14. compile it by clicking "Compile" near the top of the window
+14. ウィンドウ上部の 「Compile 」をクリックしてコンパイルします。
 
 <img width="297" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/49ec7fbd-24d3-4399-aa9f-9b4e2fa0e226">
 
-15. Now save it with the save icon
+15. 保存アイコンで保存してください。
 
 <img width="250" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/d1290a51-21b4-438e-b469-b1eec8d5774e">
 
-Finally, we need to recompress it
+最後に、それを再圧縮する必要があります
 
-16. go to Tools > Compression > ZSTD > Compress
+16. Tools > Compression > ZSTD > Compressを選択します
 
-17. select the .byml you just saved
+17. 保存した.bymlを選択します
 
-18. delete the "td" at the end of the file name so the end of the file reads `.rstbl.byml.zs`
+18. ファイル名の末尾の 「td 」を削除し、ファイルの末尾が`.rstbl.byml.zs`となるようにします。
 
-19. navigate to the romfs folder on your sd card. Make a folder called RSDB and place the file in there
+19. SDカードのromfsフォルダに移動します。 RSDB というフォルダを作成し、そこにファイルを置きます
 
-20. Boot up the game
+20. ゲームを起動します
 
 Have fun with your new kit but be sure to take a little break if all that code overwhelmed you because the next tutorial will involve a lot of code as well.
 
