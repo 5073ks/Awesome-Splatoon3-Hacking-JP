@@ -1,7 +1,7 @@
 # Awesome-Splatoon3-Hacking
-[DesperC](https://github.com/DesperC)によるスプラトゥーン3のハッキング/改造を学ぶためのリソースが入った非公式日本語版レポ
+[DesperC](https://github.com/DesperC)によるスプラトゥーン3のハッキング/改造を学ぶためのリソースが入った非公式日本語版リポ
 
-このレポは巨大なW.I.P.であり、非常に未完成です。このレポは[DesperC](https://github.com/DesperC)によるサイドプロジェクトです。
+このリポは巨大なW.I.P.であり、非常に未完成です。このレポは[DesperC](https://github.com/DesperC)によるサイドプロジェクトです。
 
 もしあなたが行き詰まったり、助けが必要だと感じたら、[Splatoon Modding Hubディスコードサーバー](https://discord.com/invite/P6RNNvk)に気軽に参加してください。
 
@@ -694,97 +694,97 @@ TIP: これまでに学んだ2つのモッディングテクニックを組み�
 
 とにかく、私の重度の不安の話はこれくらいにして、まずは[必要なエディターをダウンロードします](https://github.com/DesperC/Awesome-Splatoon3-Hacking?scrlybrkr=c562aa65#text-replacement)
 
-I would reccomend setting Kuriimu as your default .msbt editing program so you dont need to drag the file in the program to open it every time.
+Kuriimuをデフォルトの.msbt編集プログラムに設定することをお勧めします。そうすれば、毎回ファイルをプログラムにドラッグして開く必要がなくなります。
 
-1. In your romfs dump, open the Mals folder. i'm assuming youre language is english so we want this file right here
+1. romfsのダンプ内のMalsフォルダーを開きます。あなたの言語は英語だと思うので、私たちが必要なのはここにあるファイルです
 
 <img width="224" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1d31f2c2-80d4-4efc-9c39-24d676f2721e">
 
-2. Drag the file into toolbox to open it. there are a ton of .msbt files in here so here is a small list of where important ones are as well as important prefixes
+2. ファイルをツールボックスにドラッグして開きます。ここにはたくさんの .msbt ファイルがあるので、重要なものがどこにあるかと重要なプレフィックスの小さなリストを以下に示します
 
-any files starting with `msn` or `mission` or any files located inside the `LogicMsg` folder or any files in `CommonMsg/Mission` relate to hero mode
+`msn` または `mission` で始まるファイル、または `LogicMsg` フォルダー内のファイル、または `CommonMsg/Mission` 内のファイルは、ヒーローモードに関連しています
 
-any files starting with `vs` or `versus` or `lobby` relate to multiplayer
+`vs` または `versus` で始まるファイル、または `lobby` に関連するファイルは、マルチプレイヤーに関連しています
 
-you can find the splashtag titles files in `CommonMsg/Byname`
+スプラスタグタイトルのファイルは、`CommonMsg/Byname` にあります
 
-weapon names are in `CommonMsg/Weapon` 
+武器の名前は `CommonMsg/Weapon` にあります
 
-try looking at the glossary file in `CommonMsg/Glossary.msbt` if you want to find names of characters
+キャラクターの名前を見つけたい場合は、`CommonMsg/Glossary.msbt` ファイルを確認してみてください
 
-gear names can be found at `CommonMsg/Gear`
+ギアの名前は `CommonMsg/Gear` にあります
 
-text relating to salmon run is any file that has `Coop` or `LobbyCoop` in the name
+サーモンランに関連するテキストは、名前に `Coop` または `LobbyCoop` が含まれるファイルにあります
 
-if you want to edit what Deep Cut says on the news, search for any files starting with `News`
+ニュースでの「ディープカット」の発言を編集したい場合は、`News` で始まるファイルを探してください
 
-Toolbox cant edit the msbt files so we need to export them to edit them.
+Toolboxでは.msbtファイルを直接編集できないため、編集するにはエクスポートする必要があります。
 
-3. Find any `.msbt` files you want. right click on them and click Export Raw Data
+3. 編集したい`.msbt`ファイルを見つけたら、それを右クリックして「Export Raw Data（生データをエクスポート）」をクリックします
 
 <img width="305" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/abb00fc6-c6d7-4173-8fc5-d071411ac62a">
 
-4. Save the file to a place you will remember
+4. 覚えやすい場所にファイルを保存します
 
-5. open Kuriimu then open the .msbt file with Kuriimu by dragging it over
+5. Kuriimuを開き、.msbtファイルをKuriimuにドラッグして開きます
 
-6. click yes to keep a backup. this is very helpful for multiple reasons then just if you need to revert
+6. 「はい」をクリックするとバックアップが保存されます
 
 <img width="295" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/9724c759-6e35-438c-acbb-95893a3eb744">
 
-7. Click this icon here to get a preview inside the text entries
+7. このアイコンをクリックすると、テキストエントリーのプレビューが表示されます
 
 <img width="249" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/e6a1cb3c-c657-4cbf-8087-5ecf5f25cfdb">
 
-Dont worry if the entry names are gibberish. We never need to worry about names
+エントリー名がちんぷんかんぷんでも心配しないでください。名前について心配する必要はありません
 
-remember you can always use these 2 options to find something(s) specific (first one) or find and replace something(s) specific (second one)
+この2つのオプションは、特定の何かを見つける（1つ目）、または特定の何かを見つけて置き換える（2つ目）ために常に使用できることを覚えておいてください
 
 <img width="128" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/cf9ac1e0-ef99-4658-8414-9b0b806417db">
 
-8. Once you edit everything you want to edit, do `Ctrl` + `S` to save the file.
+8. 編集したいところをすべて編集したら、`Ctrl` + `S` でファイルを保存します
 
-9. back in toolbox, right click the file you just exported but now click Replace Raw Data
+9. Toolboxに戻り、先ほどエクスポートしたファイルを右クリックします
 
 <img width="349" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/0258b0d8-5105-4fec-bafb-3c6ff27b77dd">
 
-10. Navigate to the `.msbt` file you edited with Kuriimu. You should also see a `.bak` file there. ignore it
+10. 編集した`.msbt`ファイルがある場所に移動してください。そこには`.bak`ファイルもあるはずですが、それは無視してください
 
-11. select the `.msbt` file
+11. .msbt`ファイルを選択します
 
-12. back in toolbox, double click the file you just replaced to open a preview of it to make sure it has your edits. toolbox can preview msbt files but it cant edit them.
+12. ツールボックスに戻り、置換したファイルをダブルクリックしてプレビューを開き、編集が反映されていることを確認します。Toolboxはmsbtファイルをプレビューできますが、編集はできません。
 
 <img width="454" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/11143db9-66b6-47fa-88d8-70a99814a37a">
 
-13. Close the pop up window and save the file 
+13. ポップアップウィンドウを閉じ、ファイルを保存します
 
 <img width="142" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/c4973c0c-a84e-4e64-ae3f-60f862ef4ff8">
 
-14. Click Yes to the promt
+14. 「はい」をクリックします
 
 <img width="148" alt="image" src="https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/f12a659b-2218-4a5a-a392-6499eedb39e9">
 
-15. Copy the `.sarc` file we just edited and navigate to your SD card romfs directory. Make a new folder called Mals and paste the file in there
+15. 先ほど編集した`.sarc`ファイルをコピーし、SDカードのromfsディレクトリに移動します。 Mals という新しいフォルダを作成し、そこにファイルを貼り付けます。
 
-16. Boot up the game
+16. ゲームを起動します
 
-NOTE: You will need to 
+注：次のことが必要です
 
-Text editing is one of the simplest but most effective ways of modding in my opinion. I really enjoy making characters just say the dumbest things.
+テキスト編集は、私の意見では最もシンプルでありながら効果的な改造方法の1つです。キャラクターにただ、おかしなことを言わせるのが本当に楽しいです（笑）
 
-# Editing UI Layouts
+# UIレイアウトの編集
 
-Not started yet but you can use when ive already taught you to edit the files in the Layout folder
+まだ始めていないが、Layoutフォルダのファイルを編集する方法はすでに説明した通りです
 
-# Replacing Audio
-This is completely optional. If you wanna learn how to actually get into the _hacking_ part of this then skip to the next section. Otherwise follow this tutorial
+# オーディオの置き換え
+これは完全にオプションです。もし実際に_hacking_の部分に入る方法を学びたいなら、次のセクションにスキップしてください。そうでなければ、このチュートリアルに従ってください。
 
-cant be bothered to write out my own right now. might do this last. for now, refer to [this tutorial](https://gamebanana.com/tuts/15422)
+今は自分で書くのが面倒なので、最後にやるかもしれません。とりあえず、[このチュートリアル](https://gamebanana.com/tuts/15422)を参照してください。
 
-# Custom Kits
-Time for your first game hack. Weapon kits are stored in romfs/RSDB/`WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`
+# カスタムキット
+最初のゲームの改造の時間です。武器キットはromfs/RSDB/`WeaponInfoMain.Product.GAME_VERSION.rstbl.byml.zs`に格納されています。
 
-Before we get started, here is a list of all the subs and specials that can go on weapons
+始める前に、武器になるすべてのサブとスペシャルのリストを見ておこう
 
 `SpBlower` Ink Vac
 
@@ -824,7 +824,7 @@ Before we get started, here is a list of all the subs and specials that can go o
 
 `SpUltraStamp` Ultra Stamp
 
-Sub Weapons, if there are parenthesis next to a name, that tells you its second name that can be seen in the files on occasion. The second names arent too important i just put them there so you would know.
+サブウェポンについてですが、名前の横に括弧がある場合、それはファイル上で時折見られる別名を示しています。別名はあまり重要ではありませんが、知っておいてもらうために記載しました。
 
 `Beacon` Beacon (`Flag`)
 
@@ -856,7 +856,7 @@ Sub Weapons, if there are parenthesis next to a name, that tells you its second 
 
 `Trap` Ink Mine
 
-Alright. Now we can get to editing kits.
+よし。これでキットの編集ができる。
 
 1. Open switch toolbox and go to Tools > Compression > ZSTD > Decompress
 
