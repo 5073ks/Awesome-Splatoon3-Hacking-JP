@@ -45,9 +45,39 @@
 - Image Editor (Duh)
 - [Blender](https://www.blender.org/) テクスチャがモデル上でどのように見えるかを確認する
 
-### テクスチャの置き換
+### テクスチャの置き換え
 - Image Editor (still, duh)
 - [Blender](https://www.blender.org/) テクスチャがモデル上でどのように見えるかを確認する
 
 ### モデルの置き換え
-- [Blender](https://www.blender.org/) または他の3Dエディターとその使い方の知識が必要です。基本的に3Dモデルの経験が必要です。
+- [Blender](https://www.blender.org/) または他の3Dエディターとその使い方の知識が必要です。基本的に3Dモデルの経験が必要です
+
+- ### Text Replacement
+- [Kuriimu](https://github.com/IcySon55/Kuriimu) または [Kuriimu 2](https://github.com/FanTranslatorsInternational/Kuriimu2)
+Kuriimu 2はより永続的なインストール方式であり、Kuriimuは軽量でポータブルなソリューションです
+
+### Audio Replacement
+- [Looping Audio Converter](https://github.com/libertyernie/LoopingAudioConverter)
+- [Citric Composer](https://gota7.github.io/Citric-Composer/)
+- [Automatic BARS Patcher](https://github.com/ic-scm/automatic-bars-patcher) or [Online BARS Patcher](https://smashcustommusic.net/onlinetools/bars-patcher/)
+- [Foobar2000](https://www.foobar2000.org/) + [VGMStream](https://www.foobar2000.org/components/view/foo_input_vgmstream)
+- Audio Editor. 個人的には [Audacity](https://www.audacityteam.org)
+
+- # RomFSのダンプ
+
+### エミュレータ (初心者推奨) (Switchを使用しない場合は必須)
+（インストールしたいアップデートやDLCがある場合は、NSP形式でインストールしてください）ゲームを右クリックし、「RomFSをダンプ」を選択します。**これらのファイルをどこにダンプしたかを必ず覚えておくか、覚えやすい場所に置いておいてください**
+
+### Switch（初心者向けではない）
+Lockpick_RCMとNxdumptoolが必要
+
+Lockpick_RCMへのリンクは許可されていませんが、Githubの多くの場所で見つけることができます
+
+その後、この[動画](https://www.youtube.com/watch?v=mKw2ips97og)を見て使い方を学びます
+
+それが終わったら、(Nxdumptoolのnroファイル)[https://github.com/DarkMatterCore/nxdumptool/releases]をダウンロードします
+
+次に、この(動画)[https://www.youtube.com/watch?v=BZpK2JT8lcI]を見てそれの使い方を学びます
+
+私が自分で説明しない理由は、このガイドがゲームの改造に焦点を当てているためで、セットアップについては説明していないからです
+
