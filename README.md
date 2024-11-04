@@ -61,7 +61,7 @@ Kuriimu 2はより永続的なインストール方式であり、Kuriimuは軽�
 - [Citric Composer](https://gota7.github.io/Citric-Composer/)
 - [Automatic BARS Patcher](https://github.com/ic-scm/automatic-bars-patcher) or [Online BARS Patcher](https://smashcustommusic.net/onlinetools/bars-patcher/)
 - [Foobar2000](https://www.foobar2000.org/) + [VGMStream](https://www.foobar2000.org/components/view/foo_input_vgmstream)
-- Audio Editor. 個人的には [Audacity](https://www.audacityteam.org)
+- オーディオエディター。 個人的には [Audacity](https://www.audacityteam.org)
 
 # RomFSのダンプ
 
@@ -75,9 +75,9 @@ Lockpick_RCMへのリンクは許可されていませんが、Githubの多く�
 
 その後、この[動画](https://www.youtube.com/watch?v=mKw2ips97og)を見て使い方を学びます
 
-それが終わったら、(Nxdumptoolのnroファイル)[https://github.com/DarkMatterCore/nxdumptool/releases]をダウンロードします
+それが終わったら、[Nxdumptoolのnroファイル](https://github.com/DarkMatterCore/nxdumptool/releases)をダウンロードします
 
-次に、この(動画)[https://www.youtube.com/watch?v=BZpK2JT8lcI]を見てそれの使い方を学びます
+次に、この[動画](https://www.youtube.com/watch?v=BZpK2JT8lcI)を見てそれの使い方を学びます
 
 私が自分で説明しない理由は、このガイドがゲームの改造に焦点を当てているためで、セットアップについては説明していないからです
 
