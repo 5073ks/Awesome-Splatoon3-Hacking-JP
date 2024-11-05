@@ -93,7 +93,7 @@ Lockpick_RCMへのリンクは許可されていませんが、Githubの多く�
 スプラトゥーン3に再インポートするには、上記のチュートリアルの後半を参照してください
 
 # Modの使い方/インストール方法
-最初のMODを作成する前に、実際にインストールする方法を学ぶ必要があります。SDカードのルートを開いてください（エミュレーターの場合は仮想SDカードのルートへ）
+最初のModを作成する前に、実際にインストールする方法を学ぶ必要があります。SDカードのルートを開いてください（エミュレーターの場合は仮想SDカードのルートへ）
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/4b9f7abb-1085-4121-bbbb-ade78938816b)
 
@@ -105,7 +105,7 @@ atmosphereフォルダを開いて、`contents`という名前のフォルダを
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/1e734bc1-00da-46b2-b9c0-45f03f49804b)
 
-ゲームIDフォルダを開き、`romfs`というフォルダを作成します。しかし、MODをインストールするときは、MODファイルに関連するディレクトリだけを再作成します。多くの場合、この作業はすでに終わっています。とりあえず、Flexlionと、テクスチャか何かを置き換える他のMODをセットアップしてましょう。SDカードのルートに戻ってFlexlionのrarファイルを開き、7-ZipからSDカードのルートに両方のフォルダをドラックします。これですべてのファイルが必要な場所に自動的に配置されます。
+ゲームIDフォルダを開き、`romfs`というフォルダを作成します。しかし、MODをインストールするときは、MODファイルに関連するディレクトリだけを再作成します。多くの場合、この作業はすでに終わっています。とりあえず、Flexlionと、テクスチャか何かを置き換える他のModをセットアップしてましょう。SDカードのルートに戻ってFlexlionのrarファイルを開き、7-ZipからSDカードのルートに両方のフォルダをドラックします。これですべてのファイルが必要な場所に自動的に配置されます。
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fa9e5974-2c8f-4f7b-a81e-55c6e1ed08a7)
 
@@ -115,7 +115,7 @@ Flexlionはこれで完全にインストールされました！さあ、Modを
 
 これは単なる自己宣伝ではなく、[良いスタート用のMod](https://gamebanana.com/mods/439151)でもあります
 
-`Comet Range Blaster`というタイトルのファイルをダウンロードし、`Source`と呼ばれるダウンロードは無視してください。Sourceには、Modを作成するために使用したソースファイルが含まれており、アップロードすることにしました。通常はMODと一緒に提出されるものではないが、誰かの役に立つかもしれないと思ったので
+`Comet Range Blaster`というタイトルのファイルをダウンロードし、`Source`と呼ばれるダウンロードは無視してください。Sourceには、Modを作成するために使用したソースファイルが含まれており、アップロードすることにしました。通常はModと一緒に提出されるものではないが、誰かの役に立つかもしれないと思ったので
 
 `Comet Range Blaster`フォルダー内の「romfs」フォルダーに移動します。次に、SDカード上のスプラトゥーン3のゲームIDフォルダーに移動し、7-Zipウィンドウから`romfs`フォルダーをSDカードの「romfs」フォルダーにドラッグします。
 
@@ -419,7 +419,7 @@ romfsのダンプがある場所に行ってください。`UI`フォルダー�
 
 **この方法はまだ実験段階です。失敗した場合は、テクスチャの置き換えガイドを参照してください。この方法の方が信頼性が高いですが、少し時間がかかります。**
 
-お気に入りの武器のベーステクスチャを変更するMODを作りましょう
+お気に入りの武器のベーステクスチャを変更するModを作りましょう
 
 1. まず、`romfs/Model`フォルダーに入って、`Wmn`を検索します。これにより、主な武器モデルのみが表示されるように結果がフィルタリングされます。
 
@@ -977,7 +977,7 @@ Params.packにある Coop という名前のファイルは、サーモンラン
 
 11. 「240」と「120」は、10倍されたダメージの数値です。小数点以下の値が必要な場合のために、余分なゼロがあります。ですので、最大ダメージと最小ダメージを1000に設定して、常に100のダメージを与えるようにしましょう。
 
-12. では、NOvaに完璧なRNGを与えよう。そのためには、一番下の`WeaponParam`セクションまでスクロールしてください
+12. では、NOvaに完璧なRNGを与えよう。そのためには、一番下の`WeaponParam`セクションまでスクロールしてください。
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/4fd0b12c-24ee-442a-924e-0151b75ae3b9)
 
@@ -985,51 +985,51 @@ Params.packにある Coop という名前のファイルは、サーモンラン
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/3a20c4bc-2cec-49c0-aa3b-9442c2587d87)
 
-14. 次は発射レートです。`RepeatFrame`変数を1に設定して、毎フレーム発射できるようにします。0に設定するとどうなるかわからないので、試すのはちょっと怖い
+14. 次は発射レートです。`RepeatFrame`変数を1に設定して、毎フレーム発射できるようにします。0に設定するとどうなるかわからないので、試すのはちょっと怖いです。
 
-15. Finally, range. scroll up to the line called `MoveParam` (should be line 18) and find the variable called `SpawnSpeed`. this is the range. but because its so small, just adding 1 or 2 will make it shoot across the map. although you can set this as high or as low as you want. Set the highlighted value on this line to a larger number
+15. 最後に、範囲。MoveParamと呼ばれる行（おそらく18行目）までスクロールして、SpawnSpeedという変数を見つけます。これが範囲です。しかし、非常に小さいため、1または2を追加するだけでマップを越えて飛んでいくことになります。ただし、これを任意の高さや低さに設定できます。この行のハイライトされた値を大きな数字に設定してください。
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/fa70d5a0-4ef8-4cae-8843-8a4df3d4853f)
 
-16. click Compile at the top
+16. 一番上のコンパイルをクリックします
 
-17. once you save that file, make sure to save the Params.pack file too
+17. そのファイルを保存したら、Params.packファイルも保存することを確認してください。
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/b00f54ea-b1f0-455c-a2c0-421ab5982f02)
 
-18. compress the saved file with ZSTD. and put your newly created `Params.pack.zs` inside the Pack folder in your SD card romfs directory
+18. 保存したファイルをZSTDで圧縮します。そして、新しく作成した`Params.pack.zs`をSDカードのromfsディレクトリ内のPackフォルダに入れてください。
 
 ![image](https://github.com/DesperC/Awesome-Splatoon3-Hacking/assets/121410727/d0844ef8-1f92-4672-b676-60ac8be23e4b)
 
-29. Boot up the game
+29. ゲームを起動します
 
-Nova is finally a functioning weapon. 
+Novaはついに機能するウェポンになりました！
 
-# Specific Weapon Parameters
-This section will have sub sections that all focus on telling you where and how to modify more specific weapon functionality. general functions of a class will not be covered as they are either unimportant or easy to understand yourself. If you dont see a specific variable in the wepon you're editing, try adding that variable. For example, dualies dodge number is based on the `RepeatCnt` variable. However, that variable only shows up on tetras. This is because it's left at the default value (2) for all other dualies. All you need to do in this case is add that variable in the same place and in the same way you see it on tetras.
+# 特定のウェポンパラメーター
+このセクションには、特定のウェポンの機能をどこで、どのように変更するかに焦点を当てたサブセクションが含まれます。クラスの一般的な機能については、重要でないもしくは、簡単に理解できるため取り上げません。編集しているウェポンに特定の変数が見当たらない場合、その変数を追加してみてください。例えば、デュアルの回避回数は`RepeatCnt`変数に基づいています。しかし、その変数はテトラポッドでのみ表示されます。他のデュアルではデフォルト値（2）に設定されているためです。この場合、テトラポッドで見られるのと同じ場所に、同じ方法でその変数を追加するだけです。
 
-This section will not cover everything you can do. Just some interesting things you can start with
+このセクションでは、できることのすべてを網羅するわけではありません。最初に取り組める興味深いことのいくつかを紹介します。
 
-### Ink Consumption
-Down in the `WeaponParam` section for your weapon you will find a variable called `InkConsume` this variable tells the game how much ink to remove from the tank **per shot**.
+### インク消費量
+ウェポンの`WeaponParam`セクションにある`InkConsume`という変数を見つけます。この変数は、**1回のショットごとに**タンクからどれだけのインクを消費するかをゲームに指示します。
 
-### Paint Parameters
-find a section called `PaintParam` these give you a ton of customization for how much paint the weapon does. Multiplying all the values by 10 gives you some really fun results.
+### 塗りパラメーター
+`PaintParam`というセクションを見つけてください。これにより、ウェポンがどれだけの塗料を使うかのカスタマイズがたくさんできます。すべての値を10倍にすると、非常に面白い結果が得られます。
 
 ### RNG
-Down in the `WeaponParam` section for your weapon you will find multiple variables that start with `Jump_DegBias` and ` Stand_DegBias`. The Int values relate to how quickly (in frames) the RNG takes effect and the float values relate to how much RNG the weapon has in what situation (Jump or Stand)
+ウェポンの`WeaponParam`セクションに、`Jump_DegBias`および`Stand_DegBias`で始まる複数の変数が見つかります。整数値は、RNGがどれだけ早く（フレーム単位で）適用されるかに関連し、浮動小数点値は、ウェポンがどの状況（ジャンプまたはスタンド）でどれだけのRNGを持つかに関連しています。
 
-### Range
-At around line 18 where `MoveParam` is, find the variable called `SpawnSpeed`. While it might not look like it, this is range. The number represents range based on the weapon meaning something like inkbrush and 
- E-Liter will have similar values for this. Try not to think about it too hard. 
+### 範囲
+おそらく18行目の`MoveParam`のところで、`SpawnSpeed`という変数を見つけてください。一見するとそうは見えませんが、これが範囲です。
+この数値はウェポンに基づく範囲を示しており、パブロやリッター4Kのようなウェポンは似たような値を持っています。あまり深く考えないようにしてください。
 
-### Damage
-Everything in `DamageParam` aside from `ReduceEndFrame` and `ReduceStartFrame`
+### ダメージ
+`DamageParam`内の`ReduceEndFrame`および`ReduceStartFrame`以外のすべての項目
 
-### Fire Rate
-Down in `WeaponParam` find the variable called `RepeatFrame` this tells the game to shoot a bullet every `X` frames 
+### 発射レート
+`WeaponParam`の中で、`RepeatFrame`という変数を見つけてください。これは、ゲームに`X`フレームごとに弾を発射するよう指示します。
 
-### Homemade Aimbot
-Up in `CollisionParam`, edit every variable that contains the word "Radius" to be maybe 50X larger. Also make sure that all of those values are the same. This increases the radius of your bullet's hitbox making it easier to hit targets as well as objects blocking the way.
+### 自作Aimbot
+`CollisionParam`内で、「Radius」という言葉を含むすべての変数をおそらく50倍大きく編集します。また、すべての値が同じになるようにしてください。これにより、弾のヒットボックスの半径が増加し、ターゲットや障害物をヒットしやすくなります。
 
 # Class Specific Parameters
 
@@ -1071,8 +1071,8 @@ Up in `CollisionParam`, edit every variable that contains the word "Radius" to b
 
 ### Ink Splatter Textures
 
-### Stage Editing
-Stage editing is pretty complex but right now, its not even possible with most of the stages. toolbox kinda dosent compile some of the byml files correctly so until thats fixed, dont worry about it
+### ステージ編集
+ステージ編集はかなり複雑ですが、現時点ではほとんどのステージで実行できません。Toolboxが一部のBYMLファイルを正しくコンパイルできないため、それが修正されるまで心配しないでください。
 
 ### Replacing Fonts
 
