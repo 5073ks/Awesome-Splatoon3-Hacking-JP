@@ -1063,18 +1063,18 @@ Novaはついに機能するウェポンになりました！
 
 ### Object Place Limit
 
-# Misc
+# その他
 
-### Actor Swapping
+### アクターの交換
 
-### Weapon ID Swapping
+### ウェポンIDの交換
 
-### Ink Splatter Textures
+### インクの飛沫テクスチャ
 
 ### ステージ編集
 ステージ編集はかなり複雑ですが、現時点ではほとんどのステージで実行できません。Toolboxが一部のBYMLファイルを正しくコンパイルできないため、それが修正されるまで心配しないでください。
 
-### Replacing Fonts
+### フォントの置き換え
 
 
 ### Closing Notes
